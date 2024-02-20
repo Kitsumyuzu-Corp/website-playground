@@ -3,11 +3,11 @@
                         <div class="row">
                             <div class="col-md-12 grid-margin">
                                 <div class="row">
-                                    <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                                    <div class="col-8">
                                         <h3 class="font-weight-bold">Welcome <?php echo ucwords(session() -> username) ?></h3>
                                         <h6 class="font-weight-normal mb-0">All systems are running smoothly!</h6>
                                     </div>
-                                    <div class="col-12 col-xl-4">
+                                    <div class="col-4">
                                         <div class="justify-content-end d-flex">
                                             <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
                                                 <button class="btn btn-sm btn-light bg-white" type="button">
@@ -24,7 +24,11 @@
                             <div class="col-md-12 grid-margin">
                                 <div class="card">
                                     <div class="card-body">
-
+                                        <div class="col-12 grid-margin">
+                                            <div class="justify-content-end d-flex">
+                                                <a href=""><i class="far fa-calendar-plus mr-2"></i>Tambah data</a>
+                                            </div>
+                                        </div>
                                         <form action="" method="post">
                                             <div class="row">
                                                 <div class="form-group col-md-4 grid-margin">
@@ -39,9 +43,24 @@
                                                     <label for="">Paket</label>
                                                     <select name="" id="" class="form-control">
                                                         <option selected disabled>Pilih paket</option>
-                                                        <?php for ($i = 1; $i <= 24; $i++): ?>
+                                                        <?php for ($i = 1; $i <= 10; $i++): ?>
                                                             <option value="<?= $i ?>"><?= $i ?> Jam</option>
                                                         <?php endfor; ?>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-md-4 grid-margin">
+                                                    <label for="">Permainan</label>
+                                                    <select name="" id="" class="form-control">
+                                                        <option selected disabled>Pilih permainan</option>
+                                                        <?php
+                                                            foreach ($data_permainan as $data) {
+                                                        ?>
+
+                                                            <option value="<?php echo $data['id_permainan'] ?>"><?php echo $data['permainan'] ?></option>
+
+                                                        <?php
+                                                            }
+                                                        ?>
                                                     </select>
                                                 </div>
                                             </div>
@@ -58,12 +77,13 @@
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="table-responsive">
-                                                <table class="table table-bordered">
+                                                <table class="table table-bordered" id="table_bermain">
                                                     <thead>
                                                         <tr align="center">
-                                                            <th colspan="4">Daftar Anak Bermain</th>
+                                                            <th colspan="5">Daftar Anak Bermain</th>
                                                         </tr>
                                                         <tr align="center">
+                                                            <th>#</th>
                                                             <th>nama anak</th>
                                                             <th>nama ortu</th>
                                                             <th>paket</th>
@@ -71,7 +91,8 @@
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr align="left">
+                                                        <tr align="center">
+                                                            <td>1.</td>
                                                             <td>cina</td>
                                                             <td>yanto</td>
                                                             <td>1 jam</td>
@@ -92,9 +113,10 @@
                                                 <table class="table table-bordered">
                                                     <thead>
                                                         <tr align="center">
-                                                            <th colspan="4">Daftar Anak Selesai Bermain</th>
+                                                            <th colspan="5">Daftar Anak Selesai Bermain</th>
                                                         </tr>
                                                         <tr align="center">
+                                                            <th>#</th>
                                                             <th>nama anak</th>
                                                             <th>nama ortu</th>
                                                             <th>paket</th>
@@ -102,7 +124,8 @@
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr align="left">
+                                                        <tr align="center">
+                                                            <td>1.</td>
                                                             <td>cina</td>
                                                             <td>yanto</td>
                                                             <td>1 jam</td>

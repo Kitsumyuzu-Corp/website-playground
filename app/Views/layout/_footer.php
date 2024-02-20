@@ -22,6 +22,8 @@
             <script src="<?= base_url('assets/kitsu_template') ?>/js/todolist.js"></script>
         <!-- endinject -->
             <script src="https://kit.fontawesome.com/cbb81e50b1.js" crossorigin="anonymous"></script>
+            <script src="https://cdn.datatables.net/2.0.0/js/dataTables.js"></script>
+            <script src="https://cdn.datatables.net/1.11.6/js/jquery.dataTables.min.js"></script>
 
     </body>
 
@@ -46,5 +48,15 @@
             border-radius: 20px;
         }
     </style>
+
+    <script>
+        import DataTables from 'datatables.net';
+        $(document).ready(function() {
+            $('#table_bermain').DataTable({
+                "paging": true,
+                "searching": true,
+            });
+        } );
+    </script>
 
 </html>

@@ -49,6 +49,11 @@ class Playground extends Migration
 					'constraint' => 255,
 					'default' => 0,
 					'null' => true
+				],
+				'id_permainan' => [
+					'type' => 'INT',
+          'constraint' => 10,
+          'null' => true
 				]
 			]);
 
