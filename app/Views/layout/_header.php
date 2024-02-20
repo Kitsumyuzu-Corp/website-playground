@@ -16,6 +16,8 @@
         <!-- endinject -->
             <link rel="shortcut icon" href="images/favicon.png">
             <link rel="stylesheet" href="<?= base_url('assets/kitsu_template') ?>/vendors/fontawesome-icon/fontawesome.min.css">
+
+            <link rel="stylesheet" href="https://cdn.datatables.net/2.0.0/css/dataTables.dataTables.css" />
     </head>
 
     <body class="sidebar-dark">

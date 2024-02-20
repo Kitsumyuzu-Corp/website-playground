@@ -34,9 +34,25 @@
                         <ul class="nav">
 
                             <li class="nav-item">
-                                <a class="nav-link" href="/home/dashboard/?">
+                                <a class="nav-link active" href="/home/dashboard/?">
                                     <i class="fas fa-house-chimney menu-icon"></i>
                                     <span class="menu-title">Dashboard</span>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="fab fa-simplybuilt menu-icon"></i>
+                                    <span class="menu-title">Permainan</span>
+                                </a>
+                            </li>
+
+                            <hr>
+
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="far fa-file menu-icon"></i>
+                                    <span class="menu-title">Laporan</span>
                                 </a>
                             </li>
 
