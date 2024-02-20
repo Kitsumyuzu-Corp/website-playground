@@ -47,16 +47,35 @@
             background: #555;
             border-radius: 20px;
         }
+
+        /* Custom CSS to align DataTables content to center */
+        #table_bermain_wrapper, #table_bermain thead th, #table_bermain tbody td {
+            text-align: center;
+        }
+        #table_selesai_wrapper, #table_selesai thead th, #table_selesai tbody td {
+            text-align: center;
+        }
     </style>
 
     <script>
-        import DataTables from 'datatables.net';
         $(document).ready(function() {
             $('#table_bermain').DataTable({
-                "paging": true,
+                "paging": false,
                 "searching": true,
+                "ordering": false,
+                "info": false,
+                "autoWidth": false,
+                "responsive": true,
             });
-        } );
+            $('#table_selesai').DataTable({
+                "paging": false,
+                "searching": true,
+                "ordering": false,
+                "info": false,
+                "autoWidth": false,
+                "responsive": true,
+            });
+        });
     </script>
 
 </html>

@@ -79,10 +79,10 @@
                                             <div class="table-responsive">
                                                 <table class="table table-bordered" id="table_bermain">
                                                     <thead>
-                                                        <tr align="center">
+                                                        <tr>
                                                             <th colspan="5">Daftar Anak Bermain</th>
                                                         </tr>
-                                                        <tr align="center">
+                                                        <tr>
                                                             <th>#</th>
                                                             <th>nama anak</th>
                                                             <th>nama ortu</th>
@@ -91,7 +91,7 @@
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr align="center">
+                                                        <tr>
                                                             <td>1.</td>
                                                             <td>cina</td>
                                                             <td>yanto</td>
@@ -110,12 +110,12 @@
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="table-responsive">
-                                                <table class="table table-bordered">
+                                                <table class="table table-bordered" id="table_selesai">
                                                     <thead>
-                                                        <tr align="center">
+                                                        <tr>
                                                             <th colspan="5">Daftar Anak Selesai Bermain</th>
                                                         </tr>
-                                                        <tr align="center">
+                                                        <tr>
                                                             <th>#</th>
                                                             <th>nama anak</th>
                                                             <th>nama ortu</th>
@@ -124,12 +124,12 @@
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr align="center">
+                                                        <tr>
                                                             <td>1.</td>
-                                                            <td>cina</td>
-                                                            <td>yanto</td>
-                                                            <td>1 jam</td>
-                                                            <td>Rp 20.000</td>
+                                                            <td>kakasi</td>
+                                                            <td>cewek</td>
+                                                            <td>2 jam</td>
+                                                            <td>Rp 40.000</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
